@@ -24,7 +24,7 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          git config user.name "anikislam-sudo"
+          git config user.name "Mir Md. Moshiu Islam"
           git config user.email "islammoshiu@gmail.com"
           if git diff --staged --quiet; then
             echo "No changes to commit"
@@ -32,3 +32,4 @@ jobs:
           fi
           git commit -m "chore: daily update"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+
